@@ -17,32 +17,32 @@ The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SH
 ## General definitions of information artifacts
 
 - **Phylogeny:** A connected, [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) of Nodes linked by *has_Child* relationships.
-  - See also: `[evoinfo:Phylogenetic Tree](https://evoinfo.nescent.org/Concept_Glossary#Phylogenetic_Tree)` , `[evoinfo:Network](https://evoinfo.nescent.org/Concept_Glossary#Network)`.
+  - See also: [`evoinfo:Phylogenetic Tree`](https://evoinfo.nescent.org/Concept_Glossary#Phylogenetic_Tree) , [`evoinfo:Network`](https://evoinfo.nescent.org/Concept_Glossary#Network).
   
 - **Node:** An entity that is linked to other Nodes through *has_Child* relationships. A Node may be tied to a Taxonomic Unit through a *has_TU* relationship.
-  - See also: `[cdao:Node](http://purl.obolibrary.org/obo/CDAO_0000140)`.
+  - See also: [`cdao:Node`](http://purl.obolibrary.org/obo/CDAO_0000140).
 
 - **has_Child:** A directed relationship between two Nodes such that one Node is the direct descendant ("**child**") of the other.
-  - See also: `[cdao:has_Child](http://purl.obolibrary.org/obo/CDAO_0000149)`.
+  - See also: [`cdao:has_Child`](http://purl.obolibrary.org/obo/CDAO_0000149).
 
 - **Terminal Node**: A Node that has no children.
   - Also known as **leaf node** or **tip**.
-  -  See also: `[evoinfo:Terminal Node](https://evoinfo.nescent.org/Concept_Glossary#Terminal_Node)`.
+  -  See also: [`evoinfo:Terminal Node`](https://evoinfo.nescent.org/Concept_Glossary#Terminal_Node).
 
 - **Ancestor:** A Node that has one or more Descendants. Ancestors and Descendants are linked through direct or indirect *has_Child* relationships.
-  - See also: `[evoinfo:Ancestor](https://evoinfo.nescent.org/Concept_Glossary#Ancestor)`.
+  - See also: [`evoinfo:Ancestor`](https://evoinfo.nescent.org/Concept_Glossary#Ancestor).
 
 
 - **Descendant:** A Node that is has one or more Ancestors. Ancestors and Descendants are linked through direct or indirect *has_Child* relationships.
-  - See also: `[evoinfo:Descendant](https://evoinfo.nescent.org/Concept_Glossary#Descendant)`.
+  - See also: [`evoinfo:Descendant`](https://evoinfo.nescent.org/Concept_Glossary#Descendant).
 
 - **Clade:** A Node and all of its Descendants. May consist of a single Node if it has no Descendants.
-  - See also: `[evoinfo:Clade](https://evoinfo.nescent.org/Concept_Glossary#Clade)`.
+  - See also: [`evoinfo:Clade`](https://evoinfo.nescent.org/Concept_Glossary#Clade).
 
 - **Taxonomic Unit:** A set of one or more biological samples. Each sample might have unique identifiers or properties that can be used to match Specifiers.
   - According to CDAO, this is a "unit of analysis that may be tied to a node in a tree and to a row in a character matrix. It subsumes the traditional concepts of 'OTU' and 'HTU'". 
-  - The EvoInfo Glossary defines it as the "entities from which `[evoinfo:Character-States](https://evoinfo.nescent.org/Concept_Glossary#Character-State) are observed and taken as ground truths. In some cases the `[evoinfo:OTU](https://evoinfo.nescent.org/Concept_Glossary#Operational_Taxonomic_Unit)` may be a composite of data drawn from several sources. Note that the use of "taxon" for both an `evoinfo:OTU` and for a class in `[evoinfo:Organismal Taxonomy](https://evoinfo.nescent.org/Concept_Glossary#Organismal_Taxonomy)` is a cause of confusion". 
-  - See also: [cdao:TU](http://purl.obolibrary.org/obo/CDAO_0000138), [evoinfo:Operational Taxonomic Unit](https://evoinfo.nescent.org/Concept_Glossary#Operational_Taxonomic_Unit).
+  - The EvoInfo Glossary defines it as the "entities from which [`evoinfo:Character-States`](https://evoinfo.nescent.org/Concept_Glossary#Character-State) are observed and taken as ground truths. In some cases the [`evoinfo:OTU`](https://evoinfo.nescent.org/Concept_Glossary#Operational_Taxonomic_Unit) may be a composite of data drawn from several sources. Note that the use of "taxon" for both an `evoinfo:OTU` and for a class in [`evoinfo:Organismal Taxonomy`](https://evoinfo.nescent.org/Concept_Glossary#Organismal_Taxonomy) is a cause of confusion". 
+  - See also: [`cdao:TU`](http://purl.obolibrary.org/obo/CDAO_0000138), [`evoinfo:Operational Taxonomic Unit`](https://evoinfo.nescent.org/Concept_Glossary#Operational_Taxonomic_Unit).
 
 - **has_TU:** A directed relationship between a Node and a Taxonomic Unit.
 
@@ -57,7 +57,7 @@ The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SH
 
 # Phyloreference model
 
-Any definition that matches exactly zero or one node on any possible phylogeny meets the definition of a phyloreference. To allow for maximal flexibility, we do not put any constraints on how such a logical definition is constructed, stored or executed. We define certain classes of phyloreferences and provide an OWL-based definition of phyloreferences later in this document, but these do not limit the broadest possible definition of the term “phyloreference”. We anticipate new classes of phyloreferences will be discovered that cannot be expressed in OWL or that require custom software resolvers to be written. These will remain “phyloreferences” even if they do not fit any of the patterns defined in this document.
+Any definition that matches exactly zero or one node on any possible phylogeny meets the definition of a phyloreference. To allow for maximal flexibility, we do not put any constraints on how such a logical definition is constructed, stored or executed. We define certain classes of phyloreferences and provide an OWL-based definition of phyloreferences later in this document, but these do not limit the broadest possible definition of the term "phyloreference". We anticipate new classes of phyloreferences will be discovered that cannot be expressed in OWL or that require custom software resolvers to be written. These will remain "phyloreferences" even if they do not fit any of the patterns defined in this document.
 
 In order to allow phyloreferences to be resolved, however, we do need to place some constraints on the entities they may match. To this end, we require that:
 
