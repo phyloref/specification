@@ -118,7 +118,7 @@ For phylogenies that do not include character-state information, this type of ph
   2. https://www.evoio.org/wiki/Phyloreferencing_subgroup
   3. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747124/
   4. Examples of other ontology specifications:
-    1. https://www.w3.org/TR/annotation-model/
-    2. https://www.w3.org/TR/annotation-protocol/
-    3. https://www.w3.org/TR/2013/REC-prov-dm-20130430/
+     1. https://www.w3.org/TR/annotation-model/
+     2. https://www.w3.org/TR/annotation-protocol/
+     3. https://www.w3.org/TR/2013/REC-prov-dm-20130430/
 
