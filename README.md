@@ -4,8 +4,7 @@ The goal of the phyloreferencing specification is to describe what
 phyloreferences are and how they can be represented as information
 artifacts.
 
-The specification is currently an early draft and is 
-[available online in Markdown](https://github.com/phyloref/specification/blob/master/specification.md).
+The specification is currently an early draft and is [available online in Markdown](specification.md).
 Please suggest improvements or point out errors in the specification through
 [the issue tracker](https://github.com/phyloref/specification/issues).
 
