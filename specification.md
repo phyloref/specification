@@ -111,7 +111,7 @@ This phyloreference will never match a node that does not have apomorphy charact
 For phylogenies that do not include character-state information, this type of phyloreference will never resolve. For phylogenies that do not include character-state information in taxonomic units associated with ancestral nodes, this type of phyloreference will always match the included descendant.
 
 # Useful quotes
-- “The primary determinant of definition type is the author’s conceptualization of the clade.” — [Cantino](http://www.ingentaconnect.com/content/iapt/tax/2007/00000056/00000003/art00020) [*et al*](http://www.ingentaconnect.com/content/iapt/tax/2007/00000056/00000003/art00020)[, 2007](http://www.ingentaconnect.com/content/iapt/tax/2007/00000056/00000003/art00020)
+- “The primary determinant of definition type is the author’s conceptualization of the clade.” — [Cantino *et al*, 2007](http://www.ingentaconnect.com/content/iapt/tax/2007/00000056/00000003/art00020)
 
 # Relevant reading:
   1. https://evoinfo.nescent.org/Concept_Glossary
